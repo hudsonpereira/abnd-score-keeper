@@ -7,12 +7,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        displayForTeamA(10);
+        displayForTeamA(scoreTeamA);
     }
 
     /**
@@ -24,15 +26,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void plus3ForTeamA(View view) {
-       displayForTeamA(3);
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
     public void plus2ForTeamA(View view) {
-        displayForTeamA(2);
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
     public void freeThrowForTeamA(View view) {
-        displayForTeamA(1);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 
 
