@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
 
-    int scoreTeamB = 2;
+    int scoreTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,21 @@ public class MainActivity extends AppCompatActivity {
     public void freeThrowForTeamA(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
+    }
+
+    public void plus3ForTeamB(View view) {
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void plus2ForTeamB(View view) {
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void freeThrowForTeamB(View view) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
     }
 
     public void reset(View view) {
