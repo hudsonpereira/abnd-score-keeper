@@ -9,12 +9,15 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
 
+    int scoreTeamB = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 
     /**
@@ -22,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayForTeamA(int score) {
         TextView scoreView = findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -40,5 +51,11 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
     }
 
+    public void reset(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
 
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
 }
