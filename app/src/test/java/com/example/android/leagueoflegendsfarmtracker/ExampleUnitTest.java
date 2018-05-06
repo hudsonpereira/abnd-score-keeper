@@ -1,4 +1,4 @@
-package com.example.android.courtcounter;
+package com.example.android.leagueoflegendsfarmtracker;
 
 import org.junit.Test;
 

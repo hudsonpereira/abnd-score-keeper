@@ -21,7 +21,7 @@
             android:layout_height="wrap_content">
             <TextView
                 style="@style/TeamNameTextView"
-                android:text="@string/team_a"
+                android:text="@string/allies"
                 android:layout_gravity="center"
 
                 android:layout_width="wrap_content"
@@ -36,22 +36,22 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="@string/_3_points"
-                android:onClick="plus3ForTeamA"
+                android:text="@string/siege_minion"
+                android:onClick="siegeMinionForAllies"
                 style="@style/ScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="@string/_2_points"
-                android:onClick="plus2ForTeamA"
+                android:text="@string/melee_minion"
+                android:onClick="meleeMinionForAllies"
                 style="@style/ScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="@string/free_throw"
-                android:onClick="freeThrowForTeamA"
+                android:text="@string/caster_minion"
+                android:onClick="casterMinionForAllies"
                 style="@style/ScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content">
             <TextView
                 style="@style/TeamNameTextView"
-                android:text="@string/team_b"
+                android:text="@string/enemies"
                 android:layout_gravity="center"
 
                 android:layout_width="wrap_content"
@@ -84,22 +84,22 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="@string/_3_points"
-                android:onClick="plus3ForTeamB"
+                android:text="@string/siege_minion"
+                android:onClick="siegeMinionForEnemies"
                 style="@style/ScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="@string/_2_points"
-                android:onClick="plus2ForTeamB"
+                android:text="@string/melee_minion"
+                android:onClick="meleeMinionForEnemies"
                 style="@style/ScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:text="@string/free_throw"
-                android:onClick="freeThrowForTeamB"
+                android:text="@string/caster_minion"
+                android:onClick="casterMinionForEnemies"
                 style="@style/ScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -107,6 +107,7 @@
     </LinearLayout>
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
         android:onClick="reset"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"

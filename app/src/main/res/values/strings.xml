@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">CourtCounter</string>
-    <string name="team_b">Team B</string>
-    <string name="team_a">Team A</string>
+    <string name="app_name">League of Legends Farm Tracker</string>
+    <string name="enemies">Enemies</string>
+    <string name="allies">Allies</string>
     <string name="zero">0</string>
     <string name="reset">reset</string>
-    <string name="free_throw">Free Throw</string>
-    <string name="_2_points">+2 points</string>
-    <string name="_3_points">+3 points</string>
+    <string name="caster_minion">Caster Minion</string>
+    <string name="melee_minion">Melee Minion</string>
+    <string name="siege_minion">Siege Minion</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.android.courtcounter;
+package com.example.android.leagueoflegendsfarmtracker;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,33 +36,33 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void plus3ForTeamA(View view) {
-        scoreTeamA = scoreTeamA + 3;
+    public void siegeMinionForAllies(View view) {
+        scoreTeamA = scoreTeamA + 60;
         displayForTeamA(scoreTeamA);
     }
 
-    public void plus2ForTeamA(View view) {
-        scoreTeamA = scoreTeamA + 2;
+    public void meleeMinionForAllies(View view) {
+        scoreTeamA = scoreTeamA + 21;
         displayForTeamA(scoreTeamA);
     }
 
-    public void freeThrowForTeamA(View view) {
-        scoreTeamA = scoreTeamA + 1;
+    public void casterMinionForAllies(View view) {
+        scoreTeamA = scoreTeamA + 14;
         displayForTeamA(scoreTeamA);
     }
 
-    public void plus3ForTeamB(View view) {
-        scoreTeamB = scoreTeamB + 3;
+    public void siegeMinionForEnemies(View view) {
+        scoreTeamB = scoreTeamB + 60;
         displayForTeamB(scoreTeamB);
     }
 
-    public void plus2ForTeamB(View view) {
-        scoreTeamB = scoreTeamB + 2;
+    public void meleeMinionForEnemies(View view) {
+        scoreTeamB = scoreTeamB + 21;
         displayForTeamB(scoreTeamB);
     }
 
-    public void freeThrowForTeamB(View view) {
-        scoreTeamB = scoreTeamB + 1;
+    public void casterMinionForEnemies(View view) {
+        scoreTeamB = scoreTeamB + 14;
         displayForTeamB(scoreTeamB);
     }
 
